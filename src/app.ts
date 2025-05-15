@@ -5,7 +5,9 @@ import { CommentController } from './controllers/commentController';
 import { UserService } from './services/userService';
 import { PostService } from './services/postService';
 import { CommentService } from './services/commentService';
-import { UserModel, PostModel, CommentModel } from './models';
+import { UserModel} from './models/user';
+import {PostModel} from './models/post'
+import {CommentModel } from './models/comment'
 import { connectToDatabase } from './config/db';
 
 export async function createApp(): Promise<Express> {
